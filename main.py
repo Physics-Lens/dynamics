@@ -11,7 +11,7 @@ client = OpenAI(
 
 
 st.title("Physics Tutor")
-st.text("What questions do you still have regarding Dynamics?")
+st.text("Ask me about Dynamics")
 #Change here onwards
 
 	
@@ -30,7 +30,7 @@ for message in st.session_state.messages:
             st.markdown(message["content"])
 
 # Accept user input
-if prompt := st.chat_input("What is up?"):
+if prompt := st.chat_input("What questions do you still have regarding Dynamics?"):
     # Add user message to chat history
     st.session_state.messages.append({"role": "user", "content": prompt})
     # Display user message in chat message container
