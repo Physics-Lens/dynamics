@@ -1,13 +1,12 @@
 import os
 import streamlit as st
 from openai import OpenAI
-# from openai import OpenAI
-#client = OpenAI(
-#	api_key=os.environ['OPENAI_API_KEY'], 
-#)
+client = OpenAI(
+	api_key=os.environ['OPENAI_API_KEY'], 
+)
 
 # Initialize OpenAI
-openai.api_key = os.getenv('OPENAI_API_KEY')
+# openai.api_key = os.getenv('OPENAI_API_KEY')
 
 
 st.title("Physics Tutor")
